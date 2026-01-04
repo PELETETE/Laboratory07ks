@@ -1,0 +1,101 @@
+\documentclass[xcolor={svgnames}]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{caption}
+
+\usetheme{Berlin}
+\usecolortheme{seahorse}
+
+\usepackage[orientation=portrait,size=a0,scale=1.4]{beamerposter}
+
+\title{Look I'm making a poster}
+\author{Ostap S. Bender}
+\institute{RUDN University}
+
+\begin{document}
+
+\begin{frame}
+
+\begin{columns}
+\begin{column}{.33\textwidth}
+
+\begin{block}{Introduction}
+This is the introduction section. Here follows some regular text, \color{BlueViolet} from now on the text has changed colour, \color{Black} and then we are back to normal.
+
+\begin{center}
+\includegraphics[width=0.9\textwidth]{faucon.jpg}
+\captionof{figure}{faucon}
+\end{center}
+
+\end{block}
+
+\end{column}
+%
+\begin{column}{.33\textwidth}
+
+\begin{block}{Methods}
+Details about the methodology used.
+\end{block}
+
+\begin{exampleblock}{Example Block}
+This is an example block with important information.
+\end{exampleblock}
+
+\begin{center}
+\begin{tikzpicture}[scale=0.8]
+\draw[->] (0,0) -- (4,0) node[right] {x};
+\draw[->] (0,0) -- (0,3) node[above] {y};
+\fill[red!20] (1,1) circle (1);
+\node at (1,1) {Data};
+\end{tikzpicture}
+\end{center}
+
+\end{column}
+%
+\begin{column}{.33\textwidth}
+
+\begin{block}{Results}
+Presentation of research results.
+\end{block}
+
+\begin{alertblock}{Alert Block}
+Important findings or warnings.
+\end{alertblock}
+
+\begin{block}{Conclusion}
+Summary and conclusions of the research.
+\end{block}
+
+\end{column}
+\end{columns}
+
+\vspace{2cm}
+
+\begin{columns}
+\begin{column}{.7\textwidth}
+
+\begin{block}{References}
+\begin{thebibliography}{9}
+\bibitem{ref1} Author, A. (2023). Title. Journal, Volume(Issue), Pages.
+\bibitem{ref2} Researcher, B. (2022). Book Title. Publisher.
+\end{thebibliography}
+\end{block}
+
+\end{column}
+%
+\begin{column}{.3\textwidth}
+
+\begin{block}{Contact Information}
+Ostap S. Bender \\
+RUDN University \\
+\texttt{email@example.com}
+\end{block}
+
+\end{column}
+\end{columns}
+
+\end{frame}
+
+\end{document}

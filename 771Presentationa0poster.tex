@@ -1,0 +1,62 @@
+\documentclass[a0, portrait]{a0poster}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{caption}
+\usepackage[svgnames]{xcolor}
+\columnsep=100pt
+
+\begin{document}
+
+\begin{minipage}{.7\textwidth}
+\VeryHuge \textbf{Look I'm making a poster} \\ [0.75cm]
+\Large Ostap S. Bender \\
+\Large RUDN University
+\end{minipage}
+%
+\begin{minipage}{.3\textwidth}
+\includegraphics[width=\textwidth]{instituteLogo.png}
+\end{minipage}
+
+\vspace{2cm}
+
+\begin{multicols}{2}
+
+\section*{Abstract}
+Here follows some regular text, \color{BlueViolet} from now on the text has changed colour, \color{Black} and then we are back to normal.
+
+\section*{Introduction}
+This is the introduction section of my poster.
+
+\begin{center}
+\includegraphics[width=0.8\columnwidth]{771Presentationa0poster.png}
+\captionof{figure}{Example figure caption}
+\end{center}
+
+\section*{Methods}
+Details about the methodology used in this research.
+
+\begin{center}
+\begin{tikzpicture}
+\draw[->] (0,0) -- (3,0) node[right] {x};
+\draw[->] (0,0) -- (0,2) node[above] {y};
+\draw[blue, thick] plot[domain=0:2.5] (\x, {0.5*\x*\x});
+\end{tikzpicture}
+\captionof{figure}{771Presentationa0poster.png}
+\end{center}
+
+\section*{Results}
+Presentation of research results.
+
+\section*{Conclusion}
+Summary and conclusions of the research.
+
+\begin{thebibliography}{9}
+\bibitem{ref1} Author, A. (2023). Title. Journal, Volume(Issue), Pages.
+\end{thebibliography}
+
+\end{multicols}
+
+\end{document}
